@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter Komponente</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="filterComponent">
+        <div class="filterButtonContainer">
+            <button class="filter" onclick="toggleFilter()">Filter</button>
+        </div>
+        <div class="panel" id="panel" name="panel">
+            <div class="toolbar">
+                <h3>Filters</h3>
+                <div class="toolbarButtons">
+                    <button class="clearAll" onclick="uncheckAll()">Clear All</button>
+                    <button class="saveView" onclick="saveView()">Save View</button>
+                </div>
+            </div>
+            <div class="searchBarContainer">
+                <input type="text" name="searchBar" id="searchBar" placeholder="Search...">
+            </div>
+            <div class="accContainer">
+                <hr>
+                <button class="acc">Company</button>
+                <div class="accPanel">
+                    <ul id="companyList">
+                        <li class="compItem">
+                            <input type="checkbox" class="check" name="comp1" id="comp1">
+                            <label for="comp1">Facebook</label>
+                        </li>
+                        <li class="compItem">
+                            <input type="checkbox" class="check" name="comp2" id="comp2">
+                            <label for="comp2">Apple</label>
+                        </li>
+                        <li class="compItem">
+                            <input type="checkbox" class="check" name="comp3" id="comp3">
+                            <label for="comp3">Amazon</label>
+                        </li>
+                        <li class="compItem">
+                            <input type="checkbox" class="check" name="comp4" id="comp4">
+                            <label for="comp4">Netflix</label>
+                        </li>
+                        <li class="compItem">
+                            <input type="checkbox" class="check" name="comp5" id="comp5">
+                            <label for="comp5">Google</label>
+                        </li>
+                        <li class="compItem">
+                            <input type="checkbox" class="check" name="comp6" id="comp6">
+                            <label for="comp6">Sony</label>
+                        </li>
+                        <li class="compItem">
+                            <input type="checkbox" class="check" name="comp7" id="comp7">
+                            <label for="comp7">Microsoft</label>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li><button class="viewAll" onclick="showAllCompItems()">View all...</button></li>
+                    </ul>
+                </div>
+                <hr>
+                <button class="acc">Status</button>
+                <div class="accPanel">
+                    <ul>
+                        <li>
+                            <input type="checkbox" class="check" name="stat1" id="stat1">
+                            <label for="stat1">In Stock</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="check" name="stat2" id="stat2">
+                            <label for="stat2">Low Supply</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="check" name="stat3" id="stat3">
+                            <label for="stat3">Available Soon</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="check" name="stat4" id="stat4">
+                            <label for="stat4">Sold Out</label>
+                        </li>
+                    </ul>
+                </div>
+                <hr>
+                <button class="acc">Date</button>
+                <div class="accPanel">
+                    <ul>
+                        <li>
+                            <input type="checkbox" class="check" name="date2" id="date1">
+                            <label for="date1">2019</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="check" name="date2" id="date2">
+                            <label for="date2">2020</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="check" name="date2" id="date3">
+                            <label for="date2">2021</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="check" name="date2" id="date4">
+                            <label for="date2">2022</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="check" name="date2" id="date5">
+                            <label for="date2">2023</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="JS/accordion.js"></script>
+<script src="JS/toggleFilter.js"></script>
+<script src="JS/panelButtons.js"></script>
+</html>
